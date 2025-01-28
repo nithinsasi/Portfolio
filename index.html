@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin DS Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">UX Designer</div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="30px"
+                height="30px" class="menu-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Home" class="hero">
+        <h1>Hi There! 👋</h1>
+        <h2>I'm <span class="highlight">Nithin DS</span></h2>
+        <p>A Passionate UI/UX Designer & Frontend Developer</p>
+        <section id="resume" class="resume-section">
+            <h2>Resume</h2>
+            <button class="btn" onclick="downloadResume()">Download Resume</button>
+        </section>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            As a recent graduate with a degree in Computer Science and Engineering, I am excited to embark on my career in the IT industry. I am a dedicated web developer who enjoys crafting dynamic and responsive web applications. With a solid foundation in Frontend Technologies, I thrive on projects that challenge me to learn and grow...
+        </p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-columns">
+            <!-- Technical Skills -->
+            <div class="skills-column">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML" />
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            alt="CSS" />
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" />
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                            alt="Figma" />
+                        <p>Figma</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                            alt="Adobe Photoshop" />
+                        <p>Adobe</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                            alt="MySQL" />
+                        <p>MySQL</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-column">
+                <h3>Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/communication.png" alt="Communication" />
+                        <p>Communication</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/teamwork.png" alt="Teamwork" />
+                        <p>Teamwork</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/idea-sharing.png" alt="Problem Solving" />
+                        <p>Problem Solving</p>
+                    </div>
+                    <div class="skill">
+                        <img src="https://img.icons8.com/color/48/000000/leadership.png" alt="Leadership" />
+                        <p>Leadership</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Facebook.png" alt="Facebook Clone">
+                </div>
+                <div class="project-details">
+                    <h3>Facebook Clone</h3>
+                    <p>A responsive clone of Facebook's user interface.</p>
+                    <a href="https://nithinsasi.github.io/facebook-clone/" target="_blank" class="project-link">View Project</a>
+                </div>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/chicken.jpeg" alt="CFC Shop">
+                </div>
+                <div class="project-details">
+                    <h3>CFC Shop</h3>
+                    <p>An online shopping platform for quick and easy ordering.</p>
+                    <a href="https://nithinsasi.github.io/ordering/" target="_blank" class="project-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <div class="contact-form">
+            <h3>Contact Me</h3>
+            <form action="#">
+                <!-- Name Field -->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" required>
+                    <label for="name" class="form-label">Name</label>
+                </div>
+                <!-- Email Field -->
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" required>
+                    <label for="email" class="form-label">Email</label>
+                </div>
+                <!-- Message Field -->
+                <div class="form-group">
+                    <textarea class="form-control" id="message" required></textarea>
+                    <label for="message" class="form-label">Message</label>
+                </div>
+                <!-- Submit Button -->
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contacts-section">
+        <h2>Contact Details</h2>
+        <div class="contact-grid">
+            <!-- Email -->
+            <div class="contact-item">
+                <img src="https://img.icons8.com/color/48/000000/email.png" alt="Email Icon" class="contact-icon">
+                <p>
+                    <a href="mailto:nithinsasi03@gmail.com" class="contact-link">Email to: nithinsasi03@gmail.com</a>
+                </p>
+            </div>
+            <!-- Phone -->
+            <div class="contact-item">
+                <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Phone Icon" class="contact-icon">
+                <p>Phone: +91 7639113477</p>
+            </div>
+            <!-- LinkedIn -->
+            <div class="contact-item">
+                <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn Icon" class="contact-icon">
+                <p>
+                    <a href="https://www.linkedin.com/in/nithin-sasi-6576aa250" target="_blank" class="contact-link">
+                        LinkedIn 
+                    </a>
+                </p>
+            </div>
+            <!-- GitHub -->
+            <div class="contact-item">
+                <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub Icon" class="contact-icon">
+                <p>
+                    <a href="https://github.com/nithinsasi" target="_blank" class="contact-link">
+                        GitHub 
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
