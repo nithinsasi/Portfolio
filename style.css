@@ -427,7 +427,6 @@ textarea.form-control {
     margin-bottom: 1.5rem;
 }
 
-/* Contact Grid */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
@@ -462,6 +461,35 @@ textarea.form-control {
     color: #ff7f50; /* Hover color effect */
 }
 
+/* Footer Section */
+.footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #111;
+    color: #ffffff;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-link img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.footer-link:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-grid {
@@ -469,7 +497,7 @@ textarea.form-control {
         gap: 1rem;
     }
 
-    .contact-item {
-        font-size: 0.9rem;
+    .footer-links {
+        flex-direction: row;
     }
 }
