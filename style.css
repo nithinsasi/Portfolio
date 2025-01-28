@@ -474,6 +474,10 @@ textarea.form-control {
     margin-bottom: 1rem;
 }
 
+.company{
+    color: #ff7f50;
+}
+
 .footer-links {
     display: flex;
     justify-content: center;
