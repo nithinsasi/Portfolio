@@ -1,1 +1,1 @@
-Limk: https://nithinsasi.github.io/Portfolio/
+Link: https://nithinsasi.github.io/Portfolio/
